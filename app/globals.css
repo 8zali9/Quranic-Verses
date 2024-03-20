@@ -3,8 +3,6 @@ body{
     padding: 0;
     height: 100%;
     width: 100%;
-    color: lightgreen;
-    background-color: black;
     font-size: 30px;
 }
 
@@ -13,10 +11,10 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 30px;
-    color: white;
     font-weight: lighter;
     justify-content: center;
-    align-items: center;
+    align-items: self-start;
+    overflow: hidden;
 }
 
 .verse{
@@ -26,9 +24,9 @@ body{
 .verse-details{
     display: flex;
     flex-direction: column;
-    color: lightgoldenrodyellow;
     align-items: flex-end;
     justify-content: center;
+    align-self: center;
     margin-left: 70%;
 }
 
@@ -44,8 +42,38 @@ body{
     padding: 5px;
 }
 
+.bright-bg .main {
+    background-color: white;
+    color: black;
+    transition: 1s ease;
+}
+
+.bright-bg .verse-details{
+    color: rgb(204, 146, 0);
+    transition: 1s ease;
+}
+  
+.dark-bg .main {
+    background-color: black;
+    color: white;
+    transition: 1s ease;
+}
+
+.dark-bg .verse-details{
+    color: lightgoldenrodyellow;
+    transition: 1s ease;
+}
+
+.btn-bg{
+    background-color: #3333333b;
+}
+
+.reload{
+    font-size: 25px;
+}
+
 @media only screen and (max-width: 768px) {
     .verse-details{
-        margin-left: 20%;
+        margin-left: 150px;
     }
 }
