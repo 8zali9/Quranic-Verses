@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const anyVerse = Math.floor(Math.random() * 6348) + 1;
     async function getVerse() {
-      const response = await fetch(`http://api.alquran.cloud/v1/ayah/${anyVerse}/en.asad`)
+      const response = await fetch(`https://api.alquran.cloud/v1/ayah/${anyVerse}/en.asad`)
 
       const verseData = await response.json()
       setVerse(verseData.data.text)

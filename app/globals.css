@@ -44,19 +44,6 @@ body{
     padding: 5px;
 }
 
-.loading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-size: 100px;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    color: rebeccapurple;
-}
-
 @media only screen and (max-width: 768px) {
     .verse-details{
         margin-left: 20%;
